@@ -26,7 +26,20 @@ int main() {
     scanf("%lf",&b);
     peri=2*(l+b);
     printf("perimeter of rectangle is : %.2lf",peri);
-    return 0;
+    
+    //average grade
+    int p,q,r;
+    double average;
+    printf("enter maths marks : ");
+    scanf("%d",&p);
+    printf("enter physics marks : ");
+    scanf("%d",&q);
+    printf("enter mech. marks : ");
+    scanf("%d",&r);
+    average = (p+q+r)/3.0;
+    // or average = double(p+q+r)/3; 
+    printf("your average grade : %.2lf",average);
+    // cause of scanf i.e input function it gets new line func on its own
 
     return 0;
 }
