@@ -8,16 +8,30 @@ int main(){
     scanf("%d",&a);
     scanf("%d",&b);
     scanf("%d",&c);
-    if (a<b)
+   if (a>b && a>c)
+    {   max=a;
+        if (b>c)
+        min=c;
+        else
+        min=b;
+    }
+    if (b>a && b>c)
     {
         max=b;
+        if (a>c)
+        min=c;
+        else
         min=a;
     }
-    if (max<c);
+    if (c>a && c>b)
+    {
         max=c;
-    if (c<min)
-        min=c;
-
-    printf("Maximum number is %d",max);
-    printf("Minimum number is %d",min);
+        if (b>a)
+        min=a;
+        else
+        min=b;
+    }
+    printf("maximum : %d",max);
+    printf("minimum : %d",min);
+    return 0;
 }
