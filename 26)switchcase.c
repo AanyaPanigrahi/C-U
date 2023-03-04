@@ -22,7 +22,7 @@ int main(){
     {
         case 'A':
             printf("grade is between 90-100\n");
-            break;
+            break; // break terminates switch the moment it is mentioned
         case 'B':
             printf("grade is between 80-89\n");
             break;
